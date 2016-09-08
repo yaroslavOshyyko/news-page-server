@@ -1,3 +1,3 @@
 # news-page-server
 
-a [Sails](http://sailsjs.org) application
+Sport news server using [Sails](http://sailsjs.org) 
