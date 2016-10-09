@@ -17,13 +17,6 @@ module.exports = {
       unique: true
     },
 
-    email: {
-      type: 'string',
-      required: true,
-      email: true,
-      unique: true
-    },
-
     encryptedPassword: {
       type: 'string'
     },

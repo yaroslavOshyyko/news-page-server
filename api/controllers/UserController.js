@@ -12,7 +12,9 @@ module.exports = {
     User.create(req.params.all(), function UserCreated(err, user) {
       if(err) return next(err);
 
-      res.json(user);
+      if(user){
+        res.json(200, {user: user, token: jwToken.issue({id: user.id})});
+      }
     });
   }
 };
