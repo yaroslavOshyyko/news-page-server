@@ -26,6 +26,13 @@ module.exports = {
       type: 'string'
     },
 
+    points: {
+      type: 'integer',
+      defaultsTo: function () {
+        return 0;
+      }
+    },
+
     toJSON: function () {
       var obj = this.toObject();
       delete obj.password;
