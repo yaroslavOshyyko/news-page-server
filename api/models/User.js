@@ -17,6 +17,11 @@ module.exports = {
       unique: true
     },
 
+    photoUrl: {
+      type: 'string',
+      required: true
+    },
+
     encryptedPassword: {
       type: 'string'
     },
